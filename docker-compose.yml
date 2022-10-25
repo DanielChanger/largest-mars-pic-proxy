@@ -1,0 +1,14 @@
+services:
+  redis:
+    container_name: redis
+    image: redis
+    ports:
+      - "6379:6379"
+
+  mars-picture-service:
+    container_name: mars-picture-service
+    image: tboychuk/lmps
+    ports:
+      - "8080:8080"
+
+
